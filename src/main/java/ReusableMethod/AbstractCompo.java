@@ -20,4 +20,10 @@ public class AbstractCompo {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(find));
 	}
+	
+	public void ElementTodAppear(By find) 
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(find));
+	}
 }
